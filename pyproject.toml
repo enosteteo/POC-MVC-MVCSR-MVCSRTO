@@ -1,0 +1,21 @@
+[tool.ruff]
+line-length = 79
+exclude = ['.venv', 'migrations', '.devcontainer', '*old']
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+
+[tool.pytest.ini_options]
+pythonpath = "."
+
+[tool.blue]
+extend-exclude = '(migrations/)'
+
+[tool.taskipy.tasks]
+lint = 'ruff . && blue --check . --diff'
+format = 'blue .  && isort .'
+pre_test = 'task format && task lint'
+test = 'pytest -s -x --cov=app -vv'
+post_test = 'coverage html'

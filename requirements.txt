@@ -1,0 +1,16 @@
+flask
+Flask-SQLAlchemy
+python-dotenv
+psycopg2-binary
+gunicorn
+flask-login
+
+pytest
+pytest-cov
+freezegun
+
+taskipy
+blue
+ruff
+httpx
+isort
