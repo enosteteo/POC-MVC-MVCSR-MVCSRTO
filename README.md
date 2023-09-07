@@ -1,17 +1,12 @@
-POC: Boas práticas e padrões de projeto
+# POC: Boas práticas e padrões de projeto
 
-Construir e apresentar uma POC
+## POC-MVC-MVCSR-MVCSRTO
 
----
-MVC Baseado em Serviços
-MVC "Puro"
-MVC Baseado em Serviços utilizando serviços
+Projeto visa por em prática parte do conhecimento obtido por meio da Pós-Graduação em Arquitetura de Sistemas Distribuídos - PUC Minas.
 
-Design pattern:
-Builder ou Factory para criar Objetos (pode ser usado em testes)
+O projeto possui seu estilo de arquitetura baseada em serviços, em que cada módulo (serviço), possui tudo relacionado a sí e todos utilizam um único banco de dados.
 
-Será feito:
-
+Projeto base:
 TODO List API
 
 User
@@ -25,8 +20,7 @@ Auth
 * Sign in
 * Sign out
 
-
----
+--
 Padrão arquitetural (Architectural Pattern) x Padrão de projeto (Design Pattern)
 
 A diferença principal é o Escopo.
@@ -42,5 +36,4 @@ Exemplo:
 State, Strategy, Observer, Decorator, Facade, Composite, Factory Method, Builder, Singleton, Prototype
 
 
-Obs.: Existem controversias nesta questão, e.g. há quem considere MVC um design pattern, e quem o considere como um Architectural Pattern. Pois o MVC define como as classes irão se comunicar, porém ele também impacta em toda a organização do projeto.
-O que é padrão de projeto (design patterns)  
+Obs.: Existem controversias nesta questão, e.g. há quem considere MVC um design pattern, e quem o considere como um Architectural Pattern. Pois o MVC define como as classes irão se comunicar, porém ele também pode impactar toda a organização do projeto.
